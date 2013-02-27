@@ -25,7 +25,7 @@ class PkcsKeyGenerator
 
     function __construct($keystring, $salt, $iterationsMd5, $segments)
     {
-        $salt = pack('H*', $salt);
+        //$salt = pack('H*', $salt);
         $keyMaterial = '';
         $data = $keystring . $salt;
         $hashtarget = '';
